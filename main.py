@@ -55,7 +55,8 @@ def main():
     projectiles = []
     while(True):
         
-        game_clock.tick(120)
+        
+        game_clock.tick(150)
         game_window.fill((3,245,229))
         
         player.y += 1
@@ -98,9 +99,9 @@ def main():
         pygame.display.flip()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                break
+                return 0
 
-
+    
 main()
 
 
